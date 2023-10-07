@@ -25,7 +25,7 @@ export class HomePage {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(this.map);
 
-    //Marker
+    //Pembuatan marker
     const markerIcon = L.icon({
       iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png', // Ganti dengan URL ikon marker default dari CDN
       iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png', // Ganti dengan URL ikon marker default 2x dari CDN
@@ -35,9 +35,7 @@ export class HomePage {
     });
   
     const marker = L.marker([2.5162810395061546, 109.02633772363382], { icon: markerIcon }).addTo(this.map).bindPopup('Ni lagi di Natuna').openPopup();
-    // const marker1 = L.marker([-7.784313570541377, 110.37618541869247], { icon: markerIcon }).addTo(this.map).bindPopup('Antah branta').openPopup();
-    // const marker2 = L.marker([-7.784810704248861, 110.37386847860239], { icon: markerIcon }).addTo(this.map).bindPopup('Antah branta').openPopup();
-
+    
     // Base maps
     const streetMapLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
