@@ -15,7 +15,7 @@ export class HomePage {
   // }
 
   ionViewDidEnter() {
-    this.map = L.map('mapId').setView([-7.781497658743231, 110.36722982606936], 10)
+    this.map = L.map('mapId').setView([-7.781564658743231, 110.36711982606936], 10)
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
